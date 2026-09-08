@@ -589,9 +589,6 @@ const expandedPhases = reactive({})
 onMounted(async () => {
   await fetchRegistry()
   restoreSelection()
-  if (hasSelection.value) {
-    await loadSelectedPhases()
-  }
 })
 
 function goBack() {
